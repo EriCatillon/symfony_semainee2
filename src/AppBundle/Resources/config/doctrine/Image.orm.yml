@@ -1,0 +1,30 @@
+AppBundle\Entity\Image:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        filename:
+            type: string
+            length: 255
+        title:
+            type: string
+            length: 255
+        description:
+            type: text
+        filesize:
+            type: integer
+        mimetype:
+            type: string
+            length: 255
+        isPublished:
+            type: boolean
+        dateCrea:
+            type: datetime
+        dateMod:
+            type: datetime
+    lifecycleCallbacks: {  }
